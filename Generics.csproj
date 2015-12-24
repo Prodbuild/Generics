@@ -50,9 +50,10 @@
     <Compile Include="Delegates\SimpleDelegateOne.cs" />
     <Compile Include="Generics\WithGenerics.cs" />
     <Compile Include="Generics\WithoutGenerics.cs" />
-    <Compile Include="Patterns\SingletonThree.cs" />
-    <Compile Include="Patterns\SingletonOne.cs" />
-    <Compile Include="Patterns\SingletonTwo.cs" />
+    <Compile Include="Patterns\Dispose\SimpleDispose.cs" />
+    <Compile Include="Patterns\Singleton\SingletonThree.cs" />
+    <Compile Include="Patterns\Singleton\SingletonOne.cs" />
+    <Compile Include="Patterns\Singleton\SingletonTwo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
