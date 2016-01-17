@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 namespace Delegate.Four
 {
     public delegate string GetValueDelegate(int count);
-
     class Program
     {
         static string[] studentNamesArray = null;
-
         static void Main_Four(string[] args)
         {
             Student objStud = new Student();
@@ -31,12 +29,9 @@ namespace Delegate.Four
                 }, 4);
 
             Console.WriteLine("The name of the student is {0}", name);
-
             Console.ReadLine();
 
         }
-
-
     }
 
     public class Student

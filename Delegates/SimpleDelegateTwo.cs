@@ -12,7 +12,7 @@ namespace Delegate.Two
     {
         static string[] studentNamesArray = null;
 
-        static void Main_1(string[] args)
+        static void Main_Two(string[] args)
         {
             Student objStud = new Student();
             studentNamesArray = objStud.GetStudentNames();
