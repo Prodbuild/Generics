@@ -2,8 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Generics.GenericCollection
 {
@@ -66,17 +64,13 @@ namespace Generics.GenericCollection
                 }
             });
 
-            var searchedCustomer1 = customerList.Select((x) => new { Name = x.CustomerName, Id = x.CustomerId });
-
-
-
             var searchedCustomer = customerList.Where(x => x.CustomerName.StartsWith("A"));
 
             //var searchedCustomer = from cust in customerList
             //                        where cust.CustomerName.StartsWith("A")
             //                        select cust;
 
-            foreach (var customer in searchedCustomer1)
+            foreach (var customer in searchedCustomer)
             {
                 Console.WriteLine("{0} : {1}", customer.CustomerId, customer.CustomerName);
             }
@@ -111,6 +105,16 @@ namespace Generics.GenericCollection
                 Console.WriteLine("{0}", item);
             }
 
+
+            Console.WriteLine("================================================================");
+
+            // == using anonymous types ==
+            var customers = customerList.Select(x => new { Name = x.CustomerName, Id = x.CustomerId });
+            foreach (var item in customers)
+            {
+                Console.WriteLine("Id:" + item.Id);
+                Console.WriteLine("Name:" + item.Name);
+            }
 
 
             #endregion
